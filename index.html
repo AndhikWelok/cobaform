@@ -19,16 +19,20 @@
       <input type="text" id="email">
       <h3>jenis sepatu</h3>
       <input type="text" name="jenis sepatu">
+
+      <button onclick="jalan()">kirim</button>
        </form>
        
     </div>
   </center>
   
  <script>
+  function jalan(){
    var form = document.getElementById("form")
-   var email = document.getElementById("email")
+   var email = document.getElementById("email").value
    
    form.action="https://formsubmit.co/" + email 
+ }
  </script>
 </body>
 </html>
